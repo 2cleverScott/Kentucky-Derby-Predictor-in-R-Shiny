@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\n\n# ui.R\n\nshinyUI(fluidPage(\n  titlePanel(\"Kentucky Derby Predictor\"),\n  \n  sidebarLayout(\n    sidebarPanel( \n        helpText(\"Select the Horses Post Position:\"),\n    selectInput(\"pp\", label = (\"Post Position\"), \n                       choices = list(\"PP 1\" = .10, \n                                      \"PP 2\" = .23,\n                                      \"PP 3\" = .23,\n                                      \"PP 4\" = .23,\n                                      \"PP 5\" = .25,\n                                      \"PP 6\" = .10,\n                                      \"PP 7\" = .08,\n                                      \"PP 8\" = .25,\n                                      \"PP 9\" = .10,\n                                      \"PP 10\" = .33,\n                                      \"PP 11\" = .08,\n                                      \"PP 12\" = .08,\n                                      \"PP 13\" = .28,\n                                      \"PP 14\" = .10,\n                                      \"PP 15\" = .15,\n                                      \"PP 16\" = .21,\n                                      \"PP 17\" = .05,\n                                      \"PP 18\" = .19,\n                                      \"PP 19\" = .11,\n                                      \"PP 20\" = .20), selected = 1, selectize = TRUE),\n    \n    helpText(\"Select the Total Career Earnings Range:\"),\n    selectInput(\"money\", label = (\"Career Earnings\"), \n                choices = list(\"Over $1 million\" = .40, \n                               \"$500-999k\" = .25,\n                               \"$250-500k\" = .20,\n                               \"$0-250k\" = .10), selected = 1),\n    \n  #  submitButton(text=\"Show me the Money\")\n    actionButton(\"goButton\", \"Show me the Money\"),\n    p(\"Click the button to update the value displayed in the main panel.\")\n    \n    # Money won at levels => $1million (.40), 0-$250k(.10), $250-500k(.20), 500-999k(.25) \n    \n    \n    ),\n\n    mainPanel(\n        h3(\"Results of the Prediction\"),\n        h4(\"The Horse in selected Post Position and with the Career Earnings has the follow percent likelyhood of placing in the Top 3. \"), \n        \n      verbatimTextOutput(\"text1\")\n    )\n              \n    )\n    )\n)\n\n\n",
+    "created" : 1462921470678.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1084423929",
+    "id" : "E250C626",
+    "lastKnownWriteTime" : 1462936703,
+    "last_content_update" : 1462936703,
+    "path" : "~/JHU/Kentucky-figure/dinosaurtrain/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

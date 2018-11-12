@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "summary(lm((Kentucky2016$Finish)~(Money.per.Race)+TopSpeed+PP, data=Kentucky2016))\nqplot(PP,Finish, data=Kentucky2016)\nqplot(Money/1000,Finish, data=Kentucky2016)\ncor(Kentucky2016$Finish,Kentucky2016$TopSpeed)\n\ncor(Kentucky2016$Finish,Kentucky2016$Money)\ncor(Kentucky2016$Finish,Kentucky2016$Money.per.Race)\n\ncor(Kentucky2016$Finish,Kentucky2016$PP)\n",
+    "created" : 1462888371193.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2545542911",
+    "id" : "13D45B4D",
+    "lastKnownWriteTime" : 1462918073,
+    "last_content_update" : 1462918073344,
+    "path" : "~/Documents/JHU/dinosaurtrain/workup.R",
+    "project_path" : "workup.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "\n#\n# This is the user-interface definition of a Shiny web application. You can\n# run the application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\n\n# ui.R\n\nshinyUI(fluidPage(\n  titlePanel(\"Kentucky Derby Predictor\"),\n  \n  sidebarLayout(\n    sidebarPanel( \n    \n    selectInput(\"select\", label = h3(\"Post Position\"), \n                       choices = list(\"PP 1\" = 1, \"Choice 2\" = 2,\n                                      \"PP 3\" = 3,\n                                      \"Choice 4\" = 4,\n                                      \"Choice 5\" = 5,\n                                      \"Choice 6\" = 6,\n                                      \"Choice 7\" = 7,\n                                      \"Choice 8\" = 8,\n                                      \"Choice 9\" = 9,\n                                      \"Choice 10\" = 10,\n                                      \"Choice 11\" = 11,\n                                      \"Choice 12\" = 12,\n                                      \"Choice 13\" = 13,\n                                      \"Choice 14\" = 14,\n                                      \"Choice 15\" = 15,\n                                      \"Choice 16\" = 16,\n                                      \"Choice 17\" = 17,\n                                      \"Choice 18\" = 18,\n                                      \"Choice 19\" = 19,\n                                      \"Choice 20\" = 20), selected = 1)\n    \n    \n    ),\n    mainPanel(\n      textOutput(\"text1\")\n    )\n              \n              \n    )\n  )\n)",
+    "created" : 1462811935861.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1197905078",
+    "id" : "78559048",
+    "lastKnownWriteTime" : 1462835840,
+    "last_content_update" : 1462835840581,
+    "path" : "~/Documents/JHU/dinosaurtrain/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+        "notebook_format" : "html_document"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

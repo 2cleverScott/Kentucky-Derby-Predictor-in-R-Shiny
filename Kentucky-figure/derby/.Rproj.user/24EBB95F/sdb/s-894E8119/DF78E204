@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#\n# This is the server logic of a Shiny web application. You can run the \n# application by clicking 'Run App' above.\n#\n# Find out more about building applications with Shiny here:\n# \n#    http://shiny.rstudio.com/\n#\n\nlibrary(shiny)\n\n# Define server logic required to draw a histogram\nshinyServer(function(input, output) {\n   \n  output$text1 <- renderText({ \n    paste(\"You have selected\", input$select)\n    })\n  \n  k1 <- function(horse) 25 + horse*.25\n  \n  })\n",
+    "created" : 1462811936043.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4186188528",
+    "id" : "DF78E204",
+    "lastKnownWriteTime" : 1462889716,
+    "last_content_update" : 1462889716865,
+    "path" : "~/Documents/JHU/dinosaurtrain/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
