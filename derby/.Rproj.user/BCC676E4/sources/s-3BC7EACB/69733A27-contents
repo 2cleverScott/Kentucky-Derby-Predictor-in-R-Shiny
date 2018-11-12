@@ -1,0 +1,31 @@
+---
+title: "Fit Data Results Study"
+author: "Scott Roberts"
+date: "May 7, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Synopsis
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Analysis
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+#Results
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
+#Conclusion
